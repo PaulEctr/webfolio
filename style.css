@@ -74,13 +74,13 @@
 	h4,
 	h5,
 	h6 								{ font-weight:normal; }
-	h1 								{ background:#ea2e49; color:#fff; display:inline-block; margin-bottom:1em; padding:0.5em 1em; }
+	h1 								{ background:#cc0000; color:#fff; display:inline-block; margin-bottom:1em; padding:0.5em 1em; }
 	h2 								{ color:#fff; font-weight:900; /* Heavy */ font-size:6em; letter-spacing:1px; line-height:1em; }
 	h3 								{ font-size:2.25em; font-weight:200; /* Thin */ letter-spacing:1px; line-height:1em; padding:0.5em 0 0.25em 0; }
 
 	/* Links */
 	a 								{ border-bottom:1px solid rgba(0,0,0,0.2); color:#333; text-decoration:none; -moz-transition:border-color 0.2s ease-in-out; -ms-transition:border-color 0.2s ease-in-out; -o-transition:border-color 0.2s ease-in-out; -webkit-transition:border-color 0.2s ease-in-out; transition:border-color 0.2s ease-in-out; }
-	a:hover 						{ border-color:#ea2e49; }
+	a:hover 						{ border-color:#cc0000; }
 	section.intro div.summary p a,
 	div.explanation p a,
 	div.participation p a			{ color:#fff; }
@@ -93,7 +93,7 @@
 	section.intro div.summary p,
 	div.requirements p:last-child 	{ font-weight:300; letter-spacing:2px; text-transform:uppercase; }
 	section.intro div.summary p:last-child, 
-	div.requirements p:last-child 	{ border-top:1px solid #ea2e49; margin-top:1em; padding-top:1.5em; }
+	div.requirements p:last-child 	{ border-top:5px solid #cc0000; margin-top:1em; padding-top:1.5em; }
 
 	/* Other bits & bobs */
 	em,
@@ -119,7 +119,9 @@
 	footer a 						{ margin-right:0.5em; }
 
 	div.explanation 				{ color:#fff; padding:5%; }
-	div.participation 				{ background:rgba(234,46,73,0.9); color:#fff; padding:5%; }
+	div.participation 				{ background:rgba(204,0,0,0.9); color:#fff; padding:5%; }
+	div.participation a				{ color:#fff ; border-color: #fff;}
+	div.participation a:hover 		{ color:#333 ; border-color:#333; }
 	div.benefits 					{ background:rgba(255,255,255,0.9); margin-top:10%; padding:5%; }
 	div.requirements 				{ background:rgba(255,255,255,0.9); padding:5%; }
 
