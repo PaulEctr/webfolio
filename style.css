@@ -74,8 +74,8 @@
 	h4,
 	h5,
 	h6 								{ font-weight:normal; }
-	h1 								{ background:#cc0000; color:#fff; display:inline-block; margin-bottom:1em; padding:0.5em 1em; }
-	h2 								{ color:#fff; font-weight:900; /* Heavy */ font-size:6em; letter-spacing:1px; line-height:1em; }
+	h1 								{ background:#cc0000; color:#fff; display:inline-block; margin-bottom:1em; padding:0.5em 1em;}
+	h2 								{ color:#fff; font-weight:900; /* Heavy */ font-size:6em; letter-spacing:1px; line-height:1em; /*animation: 3s linear 1s infinite running slidein;*/}
 	h3 								{ font-size:2.25em; font-weight:200; /* Thin */ letter-spacing:1px; line-height:1em; padding:0.5em 0 0.25em 0; }
 
 	/* Links */
@@ -110,14 +110,34 @@
 
 	section.intro 					{ padding:5%; }
 	section.intro div.summary 		{ color:#fff; padding:15% 0; text-align: center;}
-	section.intro div.preamble 		{ background:rgba(255,255,255,0.9); color:#333; margin-left:-30%; padding:5% 5% 5% 30%; text-align: justify;}
+	section.intro div.preamble 		{ background:rgba(255,255,255,0.9); color:#333; margin-left:-30%; padding:5% 5% 5% 30%; text-align: justify; animation: 2s ease-in-out 0s 1 running test;}
+
+	@keyframes test {
+	 from {
+	  left:-130%
+	 }
+	 to {
+	  left:0%
+	 }
+	}
 	section.intro div.preamble a:hover	{ color: #cc0000; border-color: #cc0000;}
 	div.main 						{ padding:5%; }
 	aside.sidebar 					{ background:rgba(246,247,146,0.9); padding:5%; text-align: center;}
 	aside.sidebar ul 				{ padding:0.5em 0 2em 0; }
 	aside.sidebar ul li 			{ color:rgba(0,0,0,0.4); list-style:none; margin:0; padding:0 0 0.825em 0; }
-	aside.sidebar .design-selection > img				{width: 100%;}
+	aside.sidebar .design-selection .test > img				{width: 100%; animation: 2s ease-in 1s 1 reverse both running slidein;}
+
+	@keyframes slidein {
+	 from {
+	  margin-left:0%
+	 }
+	 to {
+	  margin-left:300%
+	 }
+	}
+	
 	aside.sidebar .design-selection a	{border: none;}
+	aside.sidebar .test				{ flex-direction:column; align-items:center; display: flex; justify-content: center; overflow: hidden;}
 	footer 							{ text-align: right ; background:#77c4d3; clear:both ; color:#fff; padding:1em 5%; width: 50%; }
 	footer a 						{ margin-right:1em; }
 	div.explanation 				{ color:#fff; padding:5%; text-align: justify;}

@@ -1,0 +1,9 @@
+RewriteEngine on
+
+# redirection racine > www
+RewriteCond %{HTTP_HOST} ^paulecotiere.fr$
+RewriteRule ^(.*) https://www.paulecotiere.fr/$1 [QSA,L,R=301]
+
+# redirection http > https
+RewriteCond %{SERVER_PORT} 80
+RewriteRule ^(.*)$ https://www.paulecotiere.fr/$1 [R,L]
